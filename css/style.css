@@ -1,0 +1,137 @@
+body{
+    /* background-color: #dd1313; */
+    background-color: #f7f7f7 !important;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.navbar{
+    background-color: #3b3333;
+}
+.navbar h2{
+    color: #d6d5d4;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.first, .second{
+    text-align: center;
+    flex: 1;
+}
+.second{
+    width: 100%;
+    height: 100%;
+}
+.image{
+    margin-top: 40px;
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    
+}
+.image img{
+    width: 300px;
+    height: 300px;
+    margin: 0px auto;
+    position: relative;
+    animation: moveimg 6s infinite;
+}
+@keyframes moveimg{
+    0%{top: 0px;}
+    20%{top: 150px; right: 0px;}
+    40%{top: 150px; right: -100px;}
+    60%{top: 150px; right: 100px;}
+    80%{top: 150px; right: 0px;}
+    100%{top: 0px; right: 0px;}
+}
+.loginreg{
+    position: relative;
+    display: inline-block;
+    margin: 100px 20px 10px 20px;
+    width: 80%;
+    background-color: #4d3f3f14;
+}
+
+.navlogreg{
+    color: #3b3333;
+    font-weight: bold;
+    display: flex;
+    background-color: #de9138;
+    -webkit-box-shadow: 0px 0px 25px #9b5720 inset;
+    -moz-box-shadow: 0px 0px 25px #9b5720 inset;
+    box-shadow: 0px 0px 25px #9b5720 inset;
+}
+
+.navlog{
+    border-right: solid thin #f7f7f7;
+    text-align: center;
+    font-size: 20px;
+    flex: 1;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.login, .register{
+    animation: appear 1s;
+}
+@keyframes appear{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.login input{
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9em;
+    margin: 8px;
+    padding: 10px 5px;
+    width: 60%;
+}
+/* .gender{
+    width: 5%;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+} */
+/* label{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+} */
+.active{
+    background-color: #3b3333;
+    color: #de9138;
+}
+.login input:first-child{
+    margin-top: 20px;
+}
+.login input:last-child{
+    width: 15%;
+    background-color: #de9138;
+    margin-bottom: 15px;
+}
+.login input:last-child:hover{
+    background-color: #c7c3c3;
+    color: #7c480c;
+    transition: 0.4s;
+}
+.register{
+    display: none;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.form-group{
+    text-align: left;
+}
+.btn-primary{
+    background-color: #de9138 !important;
+    border: solid thin #704513 !important;
+}
+.btn-primary:hover{
+    background-color: #cc9e69 !important;
+}
+.error{
+    color: red !important;
+}
